@@ -9,7 +9,7 @@ const NavBar = () => {
     return (
         <>
             <div className="navbar-container">
-                <Navbar>
+                <Navbar style={{boxShadow: "0px 3px 4px rgba(239, 92, 58, 0.25)"}}>
                     <Container>
                         <Navbar.Brand href="/" className="logo">SIYA.</Navbar.Brand>
                         <Navbar.Toggle />
