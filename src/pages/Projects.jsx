@@ -5,7 +5,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import '../styles/projects.css'
 
-const Project = ({ projects }) => {
+const Projects = ({ projects }) => {
     const navigate = useNavigate();
 
     const handleImageClick = (id) => {
@@ -42,4 +42,4 @@ const Project = ({ projects }) => {
     );
 }
 
-export default Project;
+export default Projects;

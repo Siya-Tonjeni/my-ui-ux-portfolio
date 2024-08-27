@@ -11,11 +11,34 @@ import project2 from './images/Project-2.png'
 import project3 from './images/Project-3.png'
 import project4 from './images/Project-4.png'
 import project5 from './images/Project-5.png'
+import work1 from './images/work-1.png'
+import work12 from './images/work-1-2.JPG'
+import work13 from './images/work-1-3.JPG'
+import work2 from './images/work-2.png'
+import work22 from './images/work-2-2.JPG'
+import work23 from './images/work-2-3.JPG'
+import work3 from './images/work-3.PNG'
+import work32 from './images/work-3-2.JPG'
+import work33 from './images/work-3-3.JPG'
+import work4 from './images/work-4.JPG'
+import work41 from './images/work-4-1.JPG'
+import work42 from './images/work-4-2.JPG'
+import work5 from './images/work-5.JPG'
+import work52 from './images/work-5-2.JPG'
+import work53 from './images/work-5-3.JPG'
+
 
 const projects = [
   {
     id:1,
     image: project1,
+    gallery: 
+    [
+      work13,
+      work1,
+      work12
+    ],
+    link: "https://www.figma.com/proto/QTTQZrahH595LtvOIuPLYs/Fanta?type=design&node-id=23-45&t=9m9y44H8DSFa9ix2-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=23%3A106&show-proto-sidebar=1",
     title: "Refreshing Fanta: A Modern Product Page",
     skills: "UI design, product page design, animation, visual hierarchy, user experience",
     description: "The Fanta product page was designed to showcase the brand's vibrant and refreshing personality. The goal was to create a visually appealing and engaging experience that highlights the diverse range of Fanta flavors.",
@@ -42,6 +65,13 @@ const projects = [
   {
     id:2,
     image: project2,
+    gallery: 
+    [
+      work2,
+      work22,
+      work23
+    ],
+    link:"https://www.figma.com/proto/tLTIqZKFAi2LIFBe96nR0B/E-Commerce-Mobile-App?type=design&node-id=38-507&t=lk2IXwaLo2kSGrCp-0&scaling=scale-down&page-id=0%3A1",
     title: "E-Commerce App: A Mobile App for Fashion Enthusiasts",
     skills: "UI design, UX design, e-commerce design, mobile app design, user flow",
     description: "This mobile app is designed to provide a seamless and enjoyable shopping experience for fashion-conscious individuals. The goal was to create a visually appealing and intuitive interface that encourages users to browse, discover, and purchase trendy clothing items.",
@@ -68,6 +98,13 @@ const projects = [
    {
     id:3,
     image: project3,
+    gallery: 
+    [
+      work3,
+      work32,
+      work33
+    ],
+    link:"https://marvelapp.com/prototype/86f9aj6/screen/90813857",
     title: "Funda Nam: A Personalized Learning Platform",
     skills: "UI design, UX design, educational app design, interaction design, client collaboration",
     description: "Funda Nam is a mobile app designed to provide students with a personalized and engaging learning experience. As a UX/UI designer, I collaborated closely with the client to understand their specific needs and goals. We conducted user research to identify key pain points and opportunities for improvement.",
@@ -100,6 +137,13 @@ const projects = [
    {
     id:4,
     image: project4,
+    gallery: 
+    [
+      work4,
+      work41,
+      work42
+    ],
+    link: "https://www.figma.com/design/mMeaZsDNCQgyJh7aTD79DY/MOOD?node-id=12-3518&t=hyUiCECVXHa1Hnmp-1",
     title: "Synton Group: Building Websites that Convert",
     skills: "UI design, UX design, web development, project management, client communication",
     description: "Synton Group is a startup company specializing in creating custom websites for businesses and individuals. As a UX/UI designer and web developer, I played a key role in delivering high-quality web solutions that meet client needs and exceed expectations.",
@@ -127,6 +171,13 @@ const projects = [
   {
     id:5,
     image: project5,
+    gallery: 
+    [
+      work5,
+      work52,
+      work53
+    ],
+    link: "https://netflorist.webflow.io/",
     title: "Blooming Business: A Modern Netflorist Website",
     skills: "UI design, UX design, website redesign, visual branding, responsive design",
     description: "The Netflorist website redesign aimed to create a more modern, user-friendly, and visually appealing online shopping experience for customers. The goal was to enhance the brand's online presence and drive sales.",
@@ -154,7 +205,7 @@ const projects = [
 ]
 
 function App() {
-  const [projectList, setProjectList] = useState(projects);
+  const [projectList] = useState(projects);
   return (
     <>
         <BrowserRouter> 
