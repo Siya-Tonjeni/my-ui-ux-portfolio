@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { NavLink, useLocation } from 'react-router-dom'; // Import NavLink and useLocation from react-router-dom
 import '../styles/navbar.css';
+import Resume from '../files/STonjeni-Resume.pdf';
 
 const NavBar = () => {
     const location = useLocation();
@@ -37,6 +38,7 @@ const NavBar = () => {
                                         Contact me
                                     </Button>
                                 </NavLink>
+                                <li className="bar-links"><a href={Resume} target="_blank" rel="noopener noreferrer" className='resume-link'>Resume</a></li>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
